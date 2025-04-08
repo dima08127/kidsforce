@@ -1,0 +1,32 @@
+.information-item {
+  margin: 70px;
+  margin-left: 188px;
+  margin-right: 188px;
+  border-radius: 44px;
+  padding: 50px 98px 58px 110px;
+  box-shadow: 0px 7px 14px 0px #0000003b;
+
+  background-color: var(--c-teal-color);
+}
+
+.information-title {
+  margin-top: 180px;
+}
+
+.information-list__link {
+  text-align: center;
+  color: var(--c-primary);
+
+  &:not(:first-child) {
+    margin-top: 40px;
+  }
+}
+
+.information-list__button {
+  margin-top: 40px;
+  padding: 10px 32px;
+  border-radius: 32px;
+  box-shadow: 1px 4px 6.6px 0px #00000030;
+
+  background-color: var(--c-lemon);
+}

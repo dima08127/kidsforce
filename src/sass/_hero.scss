@@ -1,0 +1,26 @@
+.hero-container {
+  background-image: url(../images/team.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 1440;
+  height: 700;
+}
+
+.hero-title {
+  padding-top: 56px;
+  color: var(--c-white);
+}
+
+.hero-list {
+  margin-top: 18px;
+  color: var(--c-white);
+}
+
+.hero-button {
+  margin-top: 48px;
+  padding: 10px 52px;
+  border-radius: 32px;
+  color: #ffffff;
+  background-color: var(--c-button);
+  box-shadow: 2px 2px 6px 0px #0000002e;
+}

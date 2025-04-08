@@ -1,0 +1,20 @@
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  margin-left: 219px;
+  gap: 42px;
+}
+
+.language {
+  display: flex;
+  margin-left: auto;
+}
+
+.language_item:last-child {
+  background-color: var(--c-button);
+}

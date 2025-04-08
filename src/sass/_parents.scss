@@ -1,0 +1,25 @@
+.parents-title {
+  text-align: center;
+  margin-top: 224px;
+}
+
+.parents-text {
+  text-align: center;
+  margin: 30px 300px 20px 300px;
+}
+
+.parents-list {
+  margin-top: 50px;
+  margin-left: 241px;
+  margin-right: 241px;
+}
+
+.parents-list__link {
+  padding: 12px 12px;
+  border-radius: 12px;
+  background-color: var(--c-groups);
+
+  &:not(:first-child) {
+    margin-top: 32px;
+  }
+}

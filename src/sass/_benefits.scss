@@ -1,0 +1,23 @@
+.benefits-list {
+  padding-top: 142px;
+}
+
+.benefits-text {
+  padding-right: 623px;
+  margin-top: 30px;
+}
+
+.benefits-title {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  margin-top: 28px;
+}
+
+.benefits-title__list {
+  flex-basis: calc((100% - 48px) / 2);
+}
+
+.benefits-title__span {
+  color: var(--c-text);
+}

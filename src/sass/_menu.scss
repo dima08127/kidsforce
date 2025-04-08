@@ -1,0 +1,14 @@
+.menu-title {
+  margin-top: 180px;
+}
+
+.menu-list {
+  display: flex;
+  gap: 218px;
+  margin-top: 70px;
+  background-color: #efe5db;
+}
+
+.menu-list__link {
+  flex-basis: calc((100% - 218px) / 2);
+}

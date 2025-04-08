@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--c-primary);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a,
+button {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  padding: 0 80px;
+  margin: 0 auto;
+  max-width: 1440px;
+}
