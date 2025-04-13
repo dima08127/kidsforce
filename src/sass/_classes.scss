@@ -1,0 +1,100 @@
+.classes {
+  padding-top: 180px;
+}
+
+.classes-wrapper {
+  display: flex;
+  gap: 67px;
+  margin-top: 70px;
+  align-items: flex-start;
+}
+
+.buttons-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  flex-basis: 240px;
+  flex-shrink: 0;
+  padding-top: 54px;
+}
+
+.buttons-list__item:nth-child(2) {
+  margin-top: 128px;
+}
+
+.buttons-list__item:nth-child(3) {
+  margin-top: 18px;
+}
+
+.buttons-list__item:nth-child(4) {
+  margin-top: 156px;
+}
+
+.buttons-list__button {
+  position: relative;
+}
+
+.buttons-list__title {
+  position: absolute;
+  top: 61px;
+  left: 35px;
+}
+
+.buttons-list__title:hover,
+.buttons-list__title:focus {
+  color: var(--c-primary);
+}
+
+.schedule-list {
+  position: relative;
+  padding: 17px 0 33px;
+  flex-grow: 1;
+}
+
+.schedule-list::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 154px;
+  height: 100%;
+  border-radius: 100px;
+  background-color: var(--c-yellow);
+}
+
+.schedule-list__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 63px;
+  padding: 18px 0;
+}
+.schedule-list__item:first-child {
+  padding-top: 0;
+}
+.schedule-list__item:last-child {
+  padding-bottom: 0;
+}
+.schedule-list__item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 18px;
+  bottom: 0;
+  width: calc(100% - 18px);
+  height: 1px;
+  background-image: repeating-linear-gradient(
+    to right,
+    transparent 0 10px,
+    var(--c-black) 10px 20px
+  );
+}
+
+.schedule-list__title {
+  min-width: 154px;
+  text-align: center;
+}
+
+.items-list__item:not(:first-child) {
+  margin-top: 4px;
+}

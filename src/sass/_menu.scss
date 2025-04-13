@@ -1,14 +1,11 @@
-.menu-title {
-  margin-top: 180px;
-}
-
 .menu-list {
   display: flex;
-  gap: 218px;
-  margin-top: 70px;
-  background-color: #efe5db;
+  gap: 100px;
+  padding: 60px 68px 41px 86px;
+  border: 2px solid var(--c-black);
+  border-radius: 88px;
 }
 
-.menu-list__link {
-  flex-basis: calc((100% - 218px) / 2);
+.menu-wrapper:not(:first-child) {
+  margin-left: 218px;
 }

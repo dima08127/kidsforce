@@ -4,14 +4,15 @@
   background-position: center;
   width: 1440;
   height: 700;
+  padding-top: 56px;
 }
 
 .hero-title {
-  padding-top: 56px;
   color: var(--c-white);
 }
 
 .hero-list {
+  max-width: 500px;
   margin-top: 18px;
   color: var(--c-white);
 }
