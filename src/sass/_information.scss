@@ -23,7 +23,10 @@
 }
 
 .information-list__button {
+  display: flex;
+  margin: auto;
   margin-top: 40px;
+
   padding: 10px 32px;
   border-radius: 32px;
   box-shadow: 1px 4px 6.6px 0px #00000030;

@@ -24,7 +24,11 @@
   flex-basis: calc(100% - ((100% - 40px) / 3) - 20px);
 }
 
-.groups-list__p {
+.groups-list__title {
+  text-align: center;
+}
+
+.groups-list__link {
   text-align: center;
   margin-top: 8px;
   color: var(--c-groups-class);
@@ -34,7 +38,7 @@
   margin-top: 18px;
 }
 
-.groups-list__end {
+.groups-list__day {
   margin-top: 12px;
 
   color: var(--c-groups-class);

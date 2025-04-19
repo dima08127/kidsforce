@@ -1,6 +1,7 @@
 .footer {
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
+
   background-color: var(--c-footer);
 }
 
@@ -10,6 +11,8 @@
 
 .footer-item {
   display: flex;
+  align-items: center;
+  // max-width: 966px;
 }
 
 .footer-list {
@@ -24,6 +27,7 @@
 }
 
 .footer-nav {
+  max-width: 966px;
   margin-top: 40px;
 }
 
@@ -31,4 +35,20 @@
   display: flex;
   gap: 700px;
   color: var(--c-white-color);
+}
+
+.footer-nav__item:not(:first-child) {
+  margin-left: auto;
+}
+
+.footer-icon {
+  margin-left: auto;
+}
+
+.footer-icon__link:not(:first-child) {
+  margin-top: 17px;
+}
+
+.footer-icon__svg {
+  color: var(--c-white);
 }

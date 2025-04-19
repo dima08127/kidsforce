@@ -1,5 +1,11 @@
+@use './mixins' as *;
+
 .team {
   padding-top: 180px;
+
+  @include mobile {
+    padding-top: 120px;
+  }
 }
 
 .team-list {
@@ -9,6 +15,11 @@
   box-shadow: 1px 1px 7.4px 0px #0000002e;
 
   background-color: var(--c-grey-color);
+
+  @include mobile {
+    display: block;
+    margin-top: 40px;
+  }
 }
 
 .team-list__img {
@@ -17,6 +28,10 @@
 
 .team-list__item {
   padding: 32px 25px 60px 53px;
+
+  @include mobile {
+    padding: 20px 14px 40px 14px;
+  }
 }
 
 .team-list__link {
@@ -25,4 +40,8 @@
 
 .team-list__text {
   margin-top: 68px;
+
+  @include mobile {
+    margin-top: 32px;
+  }
 }

@@ -1,3 +1,5 @@
+@use './mixins' as *;
+
 html {
   box-sizing: border-box;
 }
@@ -48,4 +50,9 @@ img {
   padding: 0 80px;
   margin: 0 auto;
   max-width: 1440px;
+
+  @include mobile {
+    padding: 0 16px;
+    max-width: 375px;
+  }
 }

@@ -1,5 +1,11 @@
+@use './mixins' as *;
+
 .classes {
   padding-top: 180px;
+
+  @include mobile {
+    padding-top: 120px;
+  }
 }
 
 .classes-wrapper {
@@ -7,6 +13,10 @@
   gap: 67px;
   margin-top: 70px;
   align-items: flex-start;
+
+  @include mobile {
+    display: block;
+  }
 }
 
 .buttons-list {

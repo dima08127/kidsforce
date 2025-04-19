@@ -1,10 +1,26 @@
+@use './mixins' as *;
+
 .benefits {
   padding-top: 142px;
+
+  @include mobile {
+    padding-top: 120px;
+  }
+}
+
+.benefits-list {
+  @include mobile {
+    max-width: 343px;
+  }
 }
 
 .benefits-text {
   max-width: 737px;
   margin-top: 30px;
+
+  @include mobile {
+    max-width: 343px;
+  }
 }
 
 .benefits-title {
@@ -12,10 +28,38 @@
   flex-wrap: wrap;
   gap: 48px;
   margin-top: 28px;
+
+  @include mobile {
+    display: block;
+  }
 }
 
 .benefits-title__list {
+  display: flex;
+  align-items: center;
   flex-basis: calc((100% - 48px) / 2);
+}
+
+.benefits-title__list:not(:first-child) {
+  @include mobile {
+    margin-top: 32px;
+  }
+}
+
+.benefits-title__text {
+  margin-left: 22px;
+  max-width: 522px;
+  width: 100%;
+}
+
+.benefits-title__text:first-child {
+  max-width: 502px;
+}
+
+.benefits-title__svg {
+  display: block;
+  // width: 100%;
+  height: auto;
 }
 
 .benefits-title__span {

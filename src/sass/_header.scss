@@ -1,3 +1,5 @@
+@use './mixins' as *;
+
 .header-container {
   display: flex;
   align-items: center;
@@ -10,11 +12,32 @@
   align-items: center;
   margin-left: 219px;
   gap: 42px;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.header-img {
+  @include mobile {
+    margin-left: 83px;
+    width: 177px;
+  }
+}
+
+.header-list__text:hover,
+.header-list__text:focus {
+  color: var(--c-button);
+  text-decoration: underline;
 }
 
 .language {
   display: flex;
   margin-left: auto;
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .language_item {
@@ -23,4 +46,8 @@
 
 .language_item:last-child {
   background-color: var(--c-button);
+}
+
+.header-img {
+  background-color: transparent;
 }

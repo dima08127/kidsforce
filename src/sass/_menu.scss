@@ -1,11 +1,51 @@
-.menu-list {
-  display: flex;
-  gap: 100px;
+.menu {
+  padding-top: 180px;
+}
+
+.menu-wrapper {
+  position: relative;
+  margin-top: 70px;
   padding: 60px 68px 41px 86px;
   border: 2px solid var(--c-black);
   border-radius: 88px;
 }
 
-.menu-wrapper:not(:first-child) {
-  margin-left: 218px;
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.menu-list__item {
+  margin-top: 24px;
+}
+
+.menu-list__link:not(:first-child) {
+  margin-top: 11px;
+}
+
+.menu-list__link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-list__inner {
+  flex-basis: calc((100% - 100px) / 2);
+}
+
+.menu-list__item {
+  margin-top: 24px;
+}
+
+.menu-text {
+  position: absolute;
+
+  right: 148px;
+  bottom: 41px;
+  max-width: 434px;
+  width: 100%;
+}
+
+.menu-title__span {
+  background-color: var(--c-green-color);
 }
