@@ -1,16 +1,17 @@
+.information {
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+
 .information-item {
-  margin: 70px;
-  margin-left: 188px;
-  margin-right: 188px;
+  margin: auto;
+  margin-top: 70px;
+  max-width: 1064px;
   border-radius: 44px;
   padding: 50px 98px 58px 110px;
   box-shadow: 0px 7px 14px 0px #0000003b;
 
   background-color: var(--c-teal-color);
-}
-
-.information-title {
-  margin-top: 180px;
 }
 
 .information-list__link {

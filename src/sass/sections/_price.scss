@@ -9,6 +9,8 @@
 }
 
 .price-list__link {
+  display: flex;
+  flex-direction: column;
   flex-basis: calc((100% - 60px) / 4);
   padding: 40px 25px 51px 25px;
   border: 1px solid var(--c-black);
@@ -21,11 +23,17 @@
 }
 
 .price-list__text {
-  margin-top: 32px;
+  padding-top: 32px;
+  margin-top: auto;
 }
 
 .price-list__panel {
   margin-top: 30px;
+}
+
+.price-list__item {
+  list-style-type: disc;
+  padding-left: 5px;
 }
 
 .price-list__item:not(:first-child) {
@@ -33,6 +41,8 @@
 }
 
 .price-list__button {
+  margin-left: 44px;
+  max-width: 164px;
   margin-top: 34px;
   padding: 10px 52px;
   border-radius: 22px;

@@ -2,6 +2,18 @@
   padding-top: 250px;
 }
 
+.gallery-item {
+  display: flex;
+}
+
+.gallery-icon {
+  margin-left: auto;
+}
+
+.gallery-icon__svg:not(:first-child) {
+  margin-left: 14px;
+}
+
 .gallery-title__list {
   display: flex;
   gap: 20px;

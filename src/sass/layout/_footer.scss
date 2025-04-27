@@ -6,6 +6,8 @@
 }
 
 .footer-container {
+  display: flex;
+
   padding: 37px 142px 50px 82px;
 }
 
@@ -27,12 +29,12 @@
 }
 
 .footer-nav {
-  max-width: 966px;
   margin-top: 40px;
 }
 
 .footer-nav__list {
   display: flex;
+  max-width: 966px;
   gap: 700px;
   color: var(--c-white-color);
 }

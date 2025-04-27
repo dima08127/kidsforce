@@ -1,4 +1,4 @@
-@use './mixins' as *;
+@use '../utils/mixins' as *;
 
 .team {
   padding-top: 180px;
@@ -6,6 +6,10 @@
   @include mobile {
     padding-top: 120px;
   }
+}
+
+.team-item {
+  display: flex;
 }
 
 .team-list {

@@ -1,4 +1,4 @@
-@use './mixins' as *;
+@use '../utils/mixins' as *;
 
 .benefits {
   padding-top: 142px;
@@ -26,7 +26,7 @@
 .benefits-title {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px;
+  gap: 28px;
   margin-top: 28px;
 
   @include mobile {
@@ -46,14 +46,14 @@
   }
 }
 
+.benefits-title__text:first-child {
+  max-width: 502px;
+}
+
 .benefits-title__text {
   margin-left: 22px;
   max-width: 522px;
   width: 100%;
-}
-
-.benefits-title__text:first-child {
-  max-width: 502px;
 }
 
 .benefits-title__svg {

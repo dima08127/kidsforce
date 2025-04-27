@@ -1,21 +1,25 @@
-@import './variables';
-@import './utils';
-@import './typography';
-@import './common';
-@import './header';
-@import './hero';
-@import './benefits';
-@import './cta.scss';
-@import './team';
-@import './classes';
-@import './groups';
-@import './services';
-@import './price';
-@import './menu';
-@import './reviews';
-@import './parents';
-@import './contacts';
-@import './gallery';
-@import './information';
-@import './footer';
-@import './mixins';
+@import './utils/variables';
+@import './utils/utils';
+@import './utils/typography';
+@import './utils/common';
+
+@import './layout/header';
+
+@import './sections/hero';
+@import './sections/benefits';
+@import './sections/cta.scss';
+@import './sections/team';
+@import './sections/classes';
+@import './sections/groups';
+@import './sections/services';
+@import './sections/price';
+@import './sections/menu';
+@import './sections/reviews';
+@import './sections/parents';
+@import './sections/contacts';
+@import './sections/gallery';
+@import './sections/information';
+
+@import './layout/footer';
+
+@import './utils/mixins';

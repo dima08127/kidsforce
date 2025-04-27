@@ -1,6 +1,8 @@
 <li class="groups-list__item
 ">
-  <img class="groups-list__img" src="{{ image }}" alt="" width="413px" height="219px" />
+<div class="groups-list__thumb">
+  <img class="groups-list__img inner-img" src="{{ image }}" alt="" width="413px" height="219px" />
+</div>
 
   <div class="groups-list__div">
     <h3 class="groups-list__title l5">{{ title }}</h3>
@@ -9,13 +11,9 @@
         {{ years }}
     </p>
     <ul class="groups-list__class">
-      <li class="groups-list__text h1">Healthy meals - five times a day</li>
-      <li class="groups-list__text h1">Educational activities according to the age category</li>
-      <li class="groups-list__text h1">Daily active outdoor walks</li>
-      <li class="groups-list__text h1">Sweet naps</li>
-      <li class="groups-list__text h1">Exciting games</li>
-      <li class="groups-list__text h1">Events with different topics</li>
-      <li class="groups-list__text h1">(up to 12 children per group)</li>
+      <each loop="feature in features">
+        <li class="groups-list__text h1">{{feature}}</li>
+      </each>
     </ul>
     <p class="groups-list__day t1">
       Work schedule: <br />

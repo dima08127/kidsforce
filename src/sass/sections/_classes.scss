@@ -1,4 +1,4 @@
-@use './mixins' as *;
+@use '../utils/mixins' as *;
 
 .classes {
   padding-top: 180px;
@@ -48,6 +48,11 @@
   position: absolute;
   top: 61px;
   left: 35px;
+}
+
+.buttons-list__images:hover,
+.buttons-list__images:focus {
+  background-image: url(../images/classes/button.svg);
 }
 
 .buttons-list__title:hover,
