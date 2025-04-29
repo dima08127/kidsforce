@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 .services {
   margin-top: 180px;
 }
@@ -6,6 +8,10 @@
   display: flex;
   gap: 20px;
   margin-top: 70px;
+
+  @include mobile {
+    display: block;
+  }
 }
 
 .services-list__link {
@@ -14,6 +20,12 @@
   box-shadow: 1px 1px 7.4px 0px #0000002e;
 
   background-color: var(--c-groups);
+
+  @include mobile {
+    &:not(:first-child) {
+      display: none;
+    }
+  }
 }
 
 .services-list__image {

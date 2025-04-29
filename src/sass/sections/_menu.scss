@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 .menu {
   padding-top: 180px;
 }
@@ -26,12 +28,21 @@
   padding: 60px 68px 41px 86px;
   border: 2px solid var(--c-black);
   border-radius: 88px;
+
+  @include mobile {
+    padding: 41px 10px 50px 18px;
+    border-radius: 32px;
+  }
 }
 
 .menu-list {
   display: flex;
   flex-wrap: wrap;
   gap: 218px;
+
+  @include mobile {
+    display: block;
+  }
 }
 
 .menu-list__item {

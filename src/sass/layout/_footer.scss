@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 .footer {
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;

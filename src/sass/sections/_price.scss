@@ -1,11 +1,24 @@
+@use '../utils/mixins' as *;
+
 .price {
-  margin-top: 180px;
+  padding-top: 180px;
+
+  @include mobile {
+    padding-top: 120px;
+  }
 }
 
 .price-list {
   display: flex;
   gap: 20px;
   margin-top: 70px;
+
+  @include mobile {
+    display: block;
+    margin-top: 40px;
+    margin-left: 22px;
+    margin-right: 22px;
+  }
 }
 
 .price-list__link {
@@ -16,6 +29,15 @@
   border: 1px solid var(--c-black);
   border-radius: 32px;
   background-color: #d4a971;
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    &:not(:first-child) {
+      margin-top: 32px;
+      padding: 40px 25px 51px 25px;
+    }
+  }
 }
 
 .price-list__title {
@@ -25,6 +47,12 @@
 .price-list__text {
   padding-top: 32px;
   margin-top: auto;
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+  }
 }
 
 .price-list__panel {

@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 .reviews {
   padding-top: 126px;
 }
@@ -11,6 +13,10 @@
   display: flex;
   gap: 20px;
   margin-top: 70px;
+
+  @include mobile {
+    display: block;
+  }
 }
 
 .reviews-list__link {
@@ -19,6 +25,13 @@
   border-radius: 44px;
   border: 2px solid var(--c-green-color);
   background-color: var(--c-grey-color);
+
+  @include mobile {
+    padding: 30px 20px 57px 18px;
+    &:not(:first-child) {
+      display: none;
+    }
+  }
 }
 
 .reviews-list__item {

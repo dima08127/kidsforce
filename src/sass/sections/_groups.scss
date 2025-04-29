@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 .groups-list {
   display: flex;
   flex-wrap: wrap;
@@ -8,6 +10,10 @@
 .groups-list__div {
   width: 413px;
   padding: 10px 38px 25px 39px;
+
+  @include mobile {
+    padding: 18px 24px 33px 25px;
+  }
 }
 
 .groups-list__div:last-child {
@@ -22,12 +28,22 @@
     0px 1px 1px 0px rgba(0, 0, 0, 0.1411764706),
     0px 1px 3px 0px rgba(0, 0, 0, 0.1215686275);
   background-color: var(--c-groups);
+
+  @include mobile {
+    &:not(:first-child) {
+      display: none;
+    }
+  }
 }
 
 .groups-list__item:last-child {
   display: flex;
   flex-direction: row-reverse;
   flex-basis: calc(100% - ((100% - 40px) / 3) - 20px);
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .groups-list__thumb {
