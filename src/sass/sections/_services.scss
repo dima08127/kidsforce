@@ -2,6 +2,10 @@
 
 .services {
   margin-top: 180px;
+
+  @include mobile {
+    padding-top: 120px;
+  }
 }
 
 .services-list {

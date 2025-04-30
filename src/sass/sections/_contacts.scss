@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 .contacts {
   margin-top: 300px;
 
@@ -15,10 +17,19 @@
   width: 1753.9785883848283;
   height: 926.6534808229329;
   z-index: -1;
+
+  @include mobile {
+    width: 765.8991406583095;
+    height: 1328.8123109821436;
+  }
 }
 
 .contacts-container {
   display: flex;
+
+  @include mobile {
+    display: block;
+  }
 }
 
 .contacts-title {
@@ -33,17 +44,30 @@
 .contacts-wrapper__img {
   margin-left: 41px;
   border-radius: 32px;
+
+  @include mobile {
+    margin-left: 0;
+  }
 }
 
 .contacts-inner {
   max-width: 300px;
   margin-top: auto;
   padding-left: 88px;
+
+  @include mobile {
+    margin-top: 40px;
+    padding-left: 0;
+  }
 }
 
 .contacts-svg {
   display: flex;
   margin-top: 30px;
+
+  @include mobile {
+    display: block;
+  }
 }
 
 .contacts-inner__input {
@@ -69,8 +93,21 @@
   background-color: var(--c-groups-class);
 }
 
+.contacts-icon {
+  @include mobile {
+    margin-top: 70px;
+  }
+}
+
 .contacts-list {
   margin-left: -40px;
+
+  @include mobile {
+    display: flex;
+    align-items: baseline;
+    margin-left: 0;
+    gap: 34px;
+  }
 }
 
 .contacts-list__item:not(:first-child) {
@@ -79,6 +116,11 @@
 
 .contacts-item {
   margin-left: 50px;
+
+  @include mobile {
+    margin-top: 30px;
+    margin-left: 0%;
+  }
 }
 
 .contacts-item__link:not(:first-child) {

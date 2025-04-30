@@ -2,6 +2,10 @@
 
 .menu {
   padding-top: 180px;
+
+  @include mobile {
+    padding-top: 120px;
+  }
 }
 
 .menu-list__title {
@@ -58,8 +62,26 @@
   justify-content: space-between;
 }
 
+.menu-list__type {
+  @include mobile {
+    max-width: 181px;
+  }
+}
+
+.menu-list__dose {
+  @include mobile {
+    flex-shrink: 0;
+  }
+}
+
 .menu-list__inner {
   flex-basis: calc((100% - 218px) / 2);
+
+  @include mobile {
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+  }
 }
 
 .menu-list__item {
@@ -73,6 +95,11 @@
   bottom: 41px;
   max-width: 434px;
   width: 100%;
+
+  @include mobile {
+    position: static;
+    margin-top: 40px;
+  }
 }
 
 .menu-title__span {

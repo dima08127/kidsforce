@@ -3,6 +3,10 @@
 .information {
   padding-top: 180px;
   padding-bottom: 180px;
+
+  @include mobile {
+    padding-top: 120px;
+  }
 }
 
 .information-item {
