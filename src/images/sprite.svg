@@ -66,5 +66,15 @@
 <path fill="#ef9156" style="fill: var(--color2, #ef9156)" d="M23.805 15.529c0.26 0.26 0.26 0.682 0 0.943l-4.243 4.243c-0.26 0.26-0.682 0.26-0.943 0s-0.26-0.682 0-0.943l3.771-3.771-3.771-3.771c-0.26-0.26-0.26-0.682 0-0.943s0.682-0.26 0.943 0l4.243 4.243zM23.333 16.667h-14.667v-1.333h14.667v1.333z"></path>
 </symbol>
 
+<symbol id="icon-modal-open" viewBox="0 0 80 32">
+<path fill="none" stroke="#d4a870" style="stroke: var(--color1, #d4a870)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M2 2h76"></path>
+<path fill="none" stroke="#d4a870" style="stroke: var(--color1, #d4a870)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M2 16h76"></path>
+<path fill="none" stroke="#d4a870" style="stroke: var(--color1, #d4a870)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M2 30h76"></path>
+</symbol>
+
+<symbol id="icon-modal-close" viewBox="0 0 32 32">
+<path fill="none" stroke="#d4a870" style="stroke: var(--color1, #d4a870)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M30.667 30.667l-29.333-29.333M30.667 1.333l-29.333 29.333"></path>
+</symbol>
+
 </defs>
 </svg>

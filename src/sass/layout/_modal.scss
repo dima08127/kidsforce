@@ -1,0 +1,52 @@
+@use '../utils/mixins' as *;
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 48px 0;
+  background-color: var(--c-white);
+  overflow: auto;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.modal-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.menu-button {
+  display: none;
+  @include mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: -38px;
+  right: 15px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
